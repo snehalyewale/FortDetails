@@ -1,0 +1,66 @@
+
+<mat-progress-bar mode="indeterminate" *ngIf="isLoding"></mat-progress-bar>
+<div>
+	<h2 *ngIf="fortData != null && fortData.length > 1">List  of forts in {{fortData[0].dist}}:</h2>
+	<div *ngFor="let fort of fortData; let i =index">
+		<h3 class="ml-1"><i><span *ngIf="fortData != null && fortData.length > 1">{{i+1}}.</span> {{fort.fortName}}</i></h3>
+		<angular-image-slider [images]="fort.images" width="800" height="534"></angular-image-slider>
+		<div class="margin-wrapper col-8 row">
+			<span><p>{{getDetails(fort.details)}}</p></span><br>
+			<div class="col-6">
+				<ul style="list-style-type:none">
+					<li class="padding-wrapper">
+						<i class="material-icons">place</i>
+						<i><span class="basic-info-label">Location:</span> </i>
+						 <span class="basic-info">{{fort.location}}</span>
+					</li>
+					<li class="padding-wrapper">
+						<i class="material-icons">access_time</i>
+						<i><span class="basic-info-label">Visiting Hours:</span> </i>
+						<span class="basic-info">{{fort.visitingHours}}</span>
+					</li>
+					<li class="padding-wrapper">
+						<i class="material-icons">train</i>
+						<i><span class="basic-info-label">Nearest Railway Station:</span></i>
+						<span class="basic-info">{{fort.station}}</span>
+					</li>
+					<li class="padding-wrapper">
+						<i class="material-icons">navigation</i>
+						<i><span class="basic-info-label">Distance From City:</span> </i>
+							<ul class="basic-info">
+								<li class="padding-wrapper">
+									<i><span class="basic-info-label">Pune:</span> </i>
+									<span class="basic-info">{{fort.distance[0]}}</span>
+								</li>
+								<li class="padding-wrapper">
+									<i><span class="basic-info-label">Mumbai: </span></i>
+									<span class="basic-info">{{fort.distance[1]}}</span>
+								</li>
+							</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6">
+				<ul style="list-style-type:none">
+					<li class="padding-wrapper">
+						<i class="material-icons">terrain</i>
+						<i><span class="basic-info-label">Grade:</span></i>
+						<span class="basic-info">{{fort.grade}}</span>
+					</li> 
+					<li class="padding-wrapper">
+						<i class="material-icons">arrow_upward</i>
+						<i><span class="basic-info-label">Height of fort:</span></i>
+						<span class="basic-info">{{fort.height}}</span>
+					</li> 
+					<li class="padding-wrapper">
+						<i class="material-icons">timer</i>
+						<i><span class="basic-info-label">Total time required for climbing:</span></i>
+						<span class="basic-info">{{fort.time}}</span>
+					</li> 
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+

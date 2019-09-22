@@ -1,0 +1,10 @@
+<mat-progress-bar mode="indeterminate" *ngIf="isLoding"></mat-progress-bar>
+<div>
+	<mat-card class="row col-12">
+		<ng-container *ngFor="let fort of fortData; let i =index">
+			<span style="margin-left: 10%">
+				{{fort.fortName}}
+			</span>
+		</ng-container>
+	</mat-card>
+</div>

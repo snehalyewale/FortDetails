@@ -1,0 +1,43 @@
+.toolbar_color {
+	background-color:  rgba(0,0,0,0.4);
+}
+.logo-label-wrapper {
+	color: white;
+	font-weight: bold;
+	font-size: 2.5rem;
+	white-space: normal;
+}
+.img_toolbar {
+	height: 550px;
+    background-size: cover;
+    //white-space: unset;
+}
+.label-wrapper {
+	font-style: italic;
+    font-size: 50px;
+    color: aqua;
+    margin-left: 33%;
+}
+.color-wrapper {
+	color: darkorange;
+}
+.mat-card {
+	background-color: unset !important;
+}
+.dropdown-wrapper {
+	font-size: 200%;
+	background-color: black !important;
+	color: seashell;
+}
+.mat-option.mat-active {
+	background-color: black !important;
+	text-decoration: underline;
+	color: seashell;
+}
+.mat-option.mat-selected {
+	color: seashell !important;
+}	
+.mat-raised-button {
+    background: black !important;
+    color: seashell !important;	
+}

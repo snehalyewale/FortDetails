@@ -1,0 +1,14 @@
+.margin-wrapper {
+	margin-left: 7%;
+	margin-top: 2%;
+}
+.basic-info-label {
+	font-size: large;
+	font-family: sans-serif;
+}
+.basic-info {
+	margin-left: 2%;
+}
+.padding-wrapper {
+	padding-bottom: 1%;
+}

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+.search-font-wrapper {
+	color: black; 
+	//font-family: AR DECODE !important;
+}
+.font-size-200 {
+	font-size: 200% !important;
+}
+.font-size-240 {
+	font-size: 240% !important;
+}
+.font-size-280 {
+	font-size: 280% !important;
+}
+.padding-top-4 {
+	padding-top:4% !important;
+}
